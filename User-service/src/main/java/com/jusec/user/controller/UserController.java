@@ -2,6 +2,7 @@ package com.jusec.user.controller;
 
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.util.StrUtil;
 import com.jusec.user.dto.LoginFormDTO;
 import com.jusec.user.entity.User;
 import com.jusec.user.entity.UserInfo;
@@ -122,5 +123,22 @@ public class UserController {
                 .map(user -> BeanUtil.copyProperties(user, UserDTO.class))
                 .collect(Collectors.toList());
         return users;
+    }
+
+    @GetMapping("/getUserById/{id}")
+    public User getUserById(@PathVariable("id") Long id){
+        return userService.getById(id);
+    }
+
+    @PostMapping("/queryById")
+    public List<UserDTO> queryById(@RequestBody List<Long> ids){
+        String idStr = StrUtil.join(",", ids);
+
+        List<UserDTO> userDTOS = userService.query()
+                .in("id", ids).last("ORDER BY FIELD(id," + idStr + ")").list()
+                .stream()
+                .map(user -> BeanUtil.copyProperties(user, UserDTO.class))
+                .collect(Collectors.toList());
+        return userDTOS;
     }
 }

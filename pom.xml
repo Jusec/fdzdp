@@ -15,6 +15,7 @@
         <module>Voucher-service</module>
         <module>Follow-service</module>
         <module>OpenFeign</module>
+        <module>Blog-service</module>
     </modules>
 
 

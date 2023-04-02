@@ -2,6 +2,7 @@ package com.jusec.feign.client;
 
 
 
+import com.jusec.feign.entity.Follow;
 import com.jusec.feign.entity.User;
 import com.jusec.utils.dto.UserDTO;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -17,16 +18,12 @@ import java.util.List;
  * @Version 17.0.1
  **/
 
-@FeignClient(value = "user-service")
+@FeignClient(value = "follow-service")
 @RestController
-@RequestMapping("/user")
-public interface UserClient {
+@RequestMapping("/follow")
+public interface FollowClient {
 
-    @GetMapping("/getUserById/{id}")
-    User getUserById(@PathVariable("id") Long id);
-    @PostMapping("/ids")
-    List<UserDTO> userlist(@RequestBody List<Long> ids);
+    @GetMapping("/query/{id}")
+    List<Follow> queryById(@PathVariable("id") Long id);
 
-    @PostMapping("/queryById")
-    List<UserDTO> queryById(@RequestBody List<Long> ids);
 }

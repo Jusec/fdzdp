@@ -75,8 +75,8 @@ public class FollowServiceImpl extends ServiceImpl<FollowMapper, Follow> impleme
     @Override
     public Result followCommons(Long id) {
         // 1.获取当前用户
-//        Long userId = UserHolder.getUser().getId();
-        Long userId = 1L;
+        Long userId = UserHolder.getUser().getId();
+
         String key = "follows:" + userId;
         // 2.求交集
         String key2 = "follows:" + id;
