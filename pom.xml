@@ -11,6 +11,7 @@
     <modules>
         <module>Utils</module>
         <module>User-service</module>
+        <module>Shop-service</module>
     </modules>
 
 
