@@ -2,10 +2,13 @@ package com.jusec.voucher.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.jusec.utils.dto.Result;
-import com.jusec.utils.utils.UserHolder;
-import com.jusec.voucher.dto.MqDTO;
-import com.jusec.voucher.entity.VoucherOrder;
+import com.jusec.dto.MqDTO;
+
+import com.jusec.dto.Result;
+import com.jusec.pojo.VoucherOrder;
+
+import com.jusec.utils.UserHolder;
+;
 import com.jusec.voucher.mapper.VoucherOrderMapper;
 import com.jusec.voucher.service.ISeckillVoucherService;
 import com.jusec.voucher.service.IVoucherOrderService;

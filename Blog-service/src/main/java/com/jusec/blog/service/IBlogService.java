@@ -1,8 +1,10 @@
 package com.jusec.blog.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.jusec.blog.entity.Blog;
-import com.jusec.utils.dto.Result;
+
+import com.jusec.dto.Result;
+import com.jusec.pojo.Blog;
+
 
 
 /**

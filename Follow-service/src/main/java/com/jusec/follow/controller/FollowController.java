@@ -3,9 +3,11 @@ package com.jusec.follow.controller;
 
 
 
-import com.jusec.follow.entity.Follow;
+
+import com.jusec.dto.Result;
 import com.jusec.follow.service.IFollowService;
-import com.jusec.utils.dto.Result;
+import com.jusec.pojo.Follow;
+
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

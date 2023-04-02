@@ -1,9 +1,11 @@
 package com.jusec.voucher.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.jusec.utils.dto.Result;
-import com.jusec.voucher.entity.SeckillVoucher;
-import com.jusec.voucher.entity.Voucher;
+import com.jusec.dto.Result;
+import com.jusec.pojo.SeckillVoucher;
+import com.jusec.pojo.Voucher;
+
+
 import com.jusec.voucher.mapper.VoucherMapper;
 import com.jusec.voucher.service.ISeckillVoucherService;
 import com.jusec.voucher.service.IVoucherService;

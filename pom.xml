@@ -16,6 +16,7 @@
         <module>Follow-service</module>
         <module>OpenFeign</module>
         <module>Blog-service</module>
+        <module>Pojo</module>
     </modules>
 
 

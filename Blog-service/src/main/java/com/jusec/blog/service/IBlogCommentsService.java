@@ -1,7 +1,8 @@
 package com.jusec.blog.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.jusec.blog.entity.BlogComments;
+import com.jusec.pojo.BlogComments;
+
 
 /**
  * <p>

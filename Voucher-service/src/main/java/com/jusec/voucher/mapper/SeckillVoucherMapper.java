@@ -1,7 +1,8 @@
 package com.jusec.voucher.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.jusec.voucher.entity.SeckillVoucher;
+import com.jusec.pojo.SeckillVoucher;
+
 
 /**
  * <p>

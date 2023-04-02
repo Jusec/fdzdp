@@ -3,12 +3,14 @@ package com.jusec.blog.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
-import com.jusec.blog.entity.Blog;
+
 import com.jusec.blog.service.IBlogService;
 import com.jusec.blog.utils.SystemConstants;
-import com.jusec.utils.dto.Result;
-import com.jusec.utils.dto.UserDTO;
-import com.jusec.utils.utils.UserHolder;
+import com.jusec.dto.Result;
+import com.jusec.dto.UserDTO;
+import com.jusec.pojo.Blog;
+
+import com.jusec.utils.UserHolder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

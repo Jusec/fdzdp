@@ -1,7 +1,7 @@
 package com.jusec.shop.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.jusec.shop.entity.Shop;
+import com.jusec.pojo.Shop;
 
 
 /**

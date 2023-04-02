@@ -1,6 +1,6 @@
 package com.jusec.user.utils;
 
-import com.jusec.utils.utils.UserHolder;
+import com.jusec.utils.UserHolder;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 import javax.servlet.http.HttpServletRequest;

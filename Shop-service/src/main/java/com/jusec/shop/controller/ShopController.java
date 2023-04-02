@@ -3,10 +3,11 @@ package com.jusec.shop.controller;
 
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.jusec.shop.entity.Shop;
+import com.jusec.dto.Result;
+import com.jusec.pojo.Shop;
 import com.jusec.shop.service.IShopService;
 import com.jusec.shop.utils.SystemConstants;
-import com.jusec.utils.dto.Result;
+
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

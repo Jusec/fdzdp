@@ -2,9 +2,10 @@ package com.jusec.blog.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
-import com.jusec.blog.entity.BlogComments;
+
 import com.jusec.blog.mapper.BlogCommentsMapper;
 import com.jusec.blog.service.IBlogCommentsService;
+import com.jusec.pojo.BlogComments;
 import org.springframework.stereotype.Service;
 
 /**

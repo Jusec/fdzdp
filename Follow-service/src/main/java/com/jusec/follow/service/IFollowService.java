@@ -1,8 +1,10 @@
 package com.jusec.follow.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.jusec.follow.entity.Follow;
-import com.jusec.utils.dto.Result;
+
+import com.jusec.dto.Result;
+import com.jusec.pojo.Follow;
+
 
 
 /**

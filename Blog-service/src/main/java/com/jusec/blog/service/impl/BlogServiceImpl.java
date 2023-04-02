@@ -1,22 +1,24 @@
 package com.jusec.blog.service.impl;
 
-import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
-import com.jusec.blog.dto.ScrollResult;
-import com.jusec.blog.entity.Blog;
+
 import com.jusec.blog.mapper.BlogMapper;
 import com.jusec.blog.service.IBlogService;
 import com.jusec.blog.utils.SystemConstants;
+import com.jusec.dto.Result;
+import com.jusec.dto.ScrollResult;
+import com.jusec.dto.UserDTO;
 import com.jusec.feign.client.FollowClient;
 import com.jusec.feign.client.UserClient;
-import com.jusec.feign.entity.Follow;
-import com.jusec.feign.entity.User;
-import com.jusec.utils.dto.Result;
-import com.jusec.utils.dto.UserDTO;
-import com.jusec.utils.utils.UserHolder;
+
+import com.jusec.pojo.Blog;
+import com.jusec.pojo.Follow;
+import com.jusec.pojo.User;
+
+import com.jusec.utils.UserHolder;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.stereotype.Service;
