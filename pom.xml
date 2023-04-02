@@ -12,6 +12,7 @@
         <module>Utils</module>
         <module>User-service</module>
         <module>Shop-service</module>
+        <module>Voucher-service</module>
     </modules>
 
 
