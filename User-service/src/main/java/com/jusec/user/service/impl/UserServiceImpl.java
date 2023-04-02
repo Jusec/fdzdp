@@ -4,15 +4,18 @@ import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
 import cn.hutool.core.lang.UUID;
 import cn.hutool.core.util.RandomUtil;
+
+
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.jusec.user.dto.LoginFormDTO;
-import com.jusec.user.entity.User;
+import com.jusec.dto.LoginFormDTO;
+import com.jusec.dto.Result;
+import com.jusec.dto.UserDTO;
+import com.jusec.pojo.User;
 import com.jusec.user.mapper.UserMapper;
 import com.jusec.user.service.IUserService;
 import com.jusec.user.utils.RegexUtils;
-import com.jusec.utils.dto.Result;
-import com.jusec.utils.dto.UserDTO;
-import com.jusec.utils.utils.UserHolder;
+
+import com.jusec.utils.UserHolder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.connection.BitFieldSubCommands;
 import org.springframework.data.redis.core.StringRedisTemplate;

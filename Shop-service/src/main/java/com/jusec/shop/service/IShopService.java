@@ -1,8 +1,10 @@
 package com.jusec.shop.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.jusec.shop.entity.Shop;
-import com.jusec.utils.dto.Result;
+
+import com.jusec.dto.Result;
+import com.jusec.pojo.Shop;
+
 
 
 /**

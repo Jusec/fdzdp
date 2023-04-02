@@ -3,14 +3,16 @@ package com.jusec.user.controller;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.StrUtil;
-import com.jusec.user.dto.LoginFormDTO;
-import com.jusec.user.entity.User;
-import com.jusec.user.entity.UserInfo;
+
+import com.jusec.dto.LoginFormDTO;
+import com.jusec.dto.Result;
+import com.jusec.dto.UserDTO;
+import com.jusec.pojo.User;
+import com.jusec.pojo.UserInfo;
 import com.jusec.user.service.IUserInfoService;
 import com.jusec.user.service.IUserService;
-import com.jusec.utils.dto.Result;
-import com.jusec.utils.dto.UserDTO;
-import com.jusec.utils.utils.UserHolder;
+
+import com.jusec.utils.UserHolder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 

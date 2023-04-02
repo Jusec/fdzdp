@@ -3,13 +3,16 @@ package com.jusec.follow.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.jusec.dto.Result;
+
+import com.jusec.dto.UserDTO;
 import com.jusec.feign.client.UserClient;
-import com.jusec.follow.entity.Follow;
+
 import com.jusec.follow.mapper.FollowMapper;
 import com.jusec.follow.service.IFollowService;
-import com.jusec.utils.dto.Result;
-import com.jusec.utils.dto.UserDTO;
-import com.jusec.utils.utils.UserHolder;
+import com.jusec.pojo.Follow;
+
+import com.jusec.utils.UserHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;

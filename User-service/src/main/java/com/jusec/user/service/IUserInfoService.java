@@ -1,7 +1,7 @@
 package com.jusec.user.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.jusec.user.entity.UserInfo;
+import com.jusec.pojo.UserInfo;
 
 
 /**

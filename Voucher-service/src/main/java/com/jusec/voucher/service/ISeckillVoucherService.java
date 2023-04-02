@@ -1,7 +1,7 @@
 package com.jusec.voucher.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.jusec.voucher.entity.SeckillVoucher;
+import com.jusec.pojo.SeckillVoucher;
 
 
 /**

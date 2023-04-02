@@ -1,7 +1,8 @@
 package com.jusec.shop.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.jusec.shop.entity.ShopType;
+
+import com.jusec.pojo.ShopType;
 import com.jusec.shop.mapper.ShopTypeMapper;
 import com.jusec.shop.service.IShopTypeService;
 import org.springframework.stereotype.Service;

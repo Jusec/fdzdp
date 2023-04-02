@@ -4,9 +4,11 @@ package com.jusec.shop.controller;
 
 
 
-import com.jusec.shop.entity.ShopType;
+
+import com.jusec.dto.Result;
+import com.jusec.pojo.ShopType;
 import com.jusec.shop.service.IShopTypeService;
-import com.jusec.utils.dto.Result;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

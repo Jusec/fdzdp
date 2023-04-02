@@ -1,8 +1,10 @@
 package com.jusec.voucher.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.jusec.utils.dto.Result;
-import com.jusec.voucher.entity.Voucher;
+import com.jusec.dto.Result;
+import com.jusec.pojo.Voucher;
+
+
 
 
 /**

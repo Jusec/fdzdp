@@ -1,9 +1,11 @@
 package com.jusec.user.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.jusec.user.dto.LoginFormDTO;
-import com.jusec.user.entity.User;
-import com.jusec.utils.dto.Result;
+
+import com.jusec.dto.LoginFormDTO;
+import com.jusec.dto.Result;
+import com.jusec.pojo.User;
+
 
 import javax.servlet.http.HttpSession;
 

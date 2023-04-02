@@ -2,9 +2,8 @@ package com.jusec.feign.client;
 
 
 
-import com.jusec.feign.entity.Follow;
-import com.jusec.feign.entity.User;
-import com.jusec.utils.dto.UserDTO;
+
+import com.jusec.pojo.Follow;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 

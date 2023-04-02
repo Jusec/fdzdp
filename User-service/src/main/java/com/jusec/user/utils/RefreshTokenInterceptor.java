@@ -2,8 +2,9 @@ package com.jusec.user.utils;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.StrUtil;
-import com.jusec.utils.dto.UserDTO;
-import com.jusec.utils.utils.UserHolder;
+
+import com.jusec.dto.UserDTO;
+import com.jusec.utils.UserHolder;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.servlet.HandlerInterceptor;
 

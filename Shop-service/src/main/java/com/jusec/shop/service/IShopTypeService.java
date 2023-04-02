@@ -1,7 +1,7 @@
 package com.jusec.shop.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.jusec.shop.entity.ShopType;
+import com.jusec.pojo.ShopType;
 
 
 /**

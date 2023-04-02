@@ -1,7 +1,7 @@
 package com.jusec.blog.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.jusec.blog.entity.Blog;
+import com.jusec.pojo.Blog;
 
 
 /**

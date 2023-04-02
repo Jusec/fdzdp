@@ -1,7 +1,7 @@
 package com.jusec.follow.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.jusec.follow.entity.Follow;
+import com.jusec.pojo.Follow;
 
 
 /**

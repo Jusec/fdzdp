@@ -3,12 +3,14 @@ package com.jusec.shop.service.impl;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.jusec.shop.entity.Shop;
+
+import com.jusec.dto.Result;
+import com.jusec.pojo.Shop;
 import com.jusec.shop.mapper.ShopMapper;
 import com.jusec.shop.service.IShopService;
 import com.jusec.shop.utils.CacheClient;
 import com.jusec.shop.utils.SystemConstants;
-import com.jusec.utils.dto.Result;
+
 import org.springframework.data.geo.Distance;
 import org.springframework.data.geo.GeoResult;
 import org.springframework.data.geo.GeoResults;
