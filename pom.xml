@@ -13,6 +13,8 @@
         <module>User-service</module>
         <module>Shop-service</module>
         <module>Voucher-service</module>
+        <module>Follow-service</module>
+        <module>OpenFeign</module>
     </modules>
 
 
@@ -103,10 +105,6 @@
                 <version>5.7.17</version>
             </dependency>
 
-            <!--            <dependency>-->
-            <!--                <groupId>org.apache.commons</groupId>-->
-            <!--                <artifactId>commons-pool2</artifactId>-->
-            <!--            </dependency>-->
 
             <dependency>
                 <groupId>org.redisson</groupId>
