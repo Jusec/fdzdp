@@ -24,7 +24,6 @@ spring:
     nacos:
       server-addr: 192.168.139.128:8848
 
-
 mybatis-plus:
   type-aliases-package: com.jusec.blog.entity # 别名扫描包
 logging:
@@ -32,3 +31,10 @@ logging:
     com.hmdp: debug
   pattern:
     dateformat: mm:ss.SSS
+# feign 默认使用URLconnection， 不支持线程池
+# 使用Apache HttpClient 或者OK Http 这些支持线程池
+feign:
+  httpclient:
+    enabled: true
+    max-connections: 200
+    max-connections-per-route: 50

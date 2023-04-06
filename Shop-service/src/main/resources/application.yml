@@ -1,6 +1,8 @@
 server:
   port: 8082
 spring:
+  application:
+    name: shop-service
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/hmdp?useSSL=false&serverTimezone=UTC
@@ -18,8 +20,6 @@ spring:
         time-between-eviction-runs: 10s
   jackson:
     default-property-inclusion: non_null # JSON处理时忽略非空字段
-  application:
-    name: shop-service
   cloud:
     nacos:
       server-addr: 192.168.139.128:8848

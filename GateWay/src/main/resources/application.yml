@@ -13,3 +13,20 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/user/**
+        - id: shop-service
+          uri: lb://shop-service
+          predicates:
+            - Path= /shop/**, /shop-type/**
+        - id: voucher-service
+          uri: lb://voucher-service
+          predicates:
+            - Path=/voucher/**, /voucher-order/**
+        - id: follow-service
+          uri: lb://follow-service
+          predicates:
+            - Path=/follow/**
+        - id: blog-service
+          uri: lb://blog-service
+          predicates:
+            - Path=/blog-comments/**, /blog/**
+
