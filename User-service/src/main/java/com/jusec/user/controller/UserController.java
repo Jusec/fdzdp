@@ -13,6 +13,7 @@ import com.jusec.user.service.IUserInfoService;
 import com.jusec.user.service.IUserService;
 
 import com.jusec.utils.UserHolder;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,6 +28,7 @@ import java.util.stream.Collectors;
  * </p>
  *
  */
+@Api(tags = "文章 ")
 @Slf4j
 @RestController
 @RequestMapping("/user")

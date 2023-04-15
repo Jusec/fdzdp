@@ -5,6 +5,8 @@ package com.jusec.voucher.controller;
 import com.jusec.dto.Result;
 import com.jusec.pojo.Voucher;
 import com.jusec.voucher.service.IVoucherService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -15,6 +17,8 @@ import javax.annotation.Resource;
  * </p>
  *
  */
+
+@Api(tags =  "电影访问接口" )
 @RestController
 @RequestMapping("/voucher")
 public class VoucherController {
@@ -28,6 +32,7 @@ public class VoucherController {
      * @return 优惠券id
      */
     @PostMapping("seckill")
+    @ApiOperation("添加一部电影")
     public Result addSeckillVoucher(@RequestBody Voucher voucher) {
         voucherService.addSeckillVoucher(voucher);
         return Result.ok(voucher.getId());

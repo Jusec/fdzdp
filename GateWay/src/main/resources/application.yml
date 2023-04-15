@@ -17,6 +17,7 @@ spring:
           uri: lb://shop-service
           predicates:
             - Path= /shop/**, /shop-type/**
+
         - id: voucher-service
           uri: lb://voucher-service
           predicates:

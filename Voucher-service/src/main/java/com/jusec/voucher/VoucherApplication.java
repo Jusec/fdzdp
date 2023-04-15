@@ -4,6 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 /**
  * @ClassName VoucherApplication
  * @description:
@@ -14,6 +15,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @MapperScan("com.jusec.voucher.mapper")
 @SpringBootApplication
+//@EnableOpenApi
 public class VoucherApplication {
     public static void main(String[] args) {
         SpringApplication.run(VoucherApplication.class, args);
